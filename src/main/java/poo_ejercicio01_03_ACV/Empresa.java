@@ -11,6 +11,9 @@ package poo_ejercicio01_03_ACV;
 public class Empresa {
 
     private String nombre;
+    private String duenioEmpresa;
+    private String anioCreacion;
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -19,5 +22,22 @@ public class Empresa {
     public String getNombre() {
         return nombre;
     }
+
+    public void setDuenioEmpresa(String duenioEmpresa) {
+        this.duenioEmpresa = duenioEmpresa;
+    }
+
+    public void setAnioCreacion(String anioCreacion) {
+        this.anioCreacion = anioCreacion;
+    }
+
+    public String getDuenioEmpresa() {
+        return duenioEmpresa;
+    }
+
+    public String getAnioCreacion() {
+        return anioCreacion;
+    }
+    
 
 }

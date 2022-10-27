@@ -8,7 +8,7 @@ package poo_ejercicio01_03_ACV;
  *
  * @author kevinandres
  */
-public class Empleado extends Persona {
+   public class Empleado extends Persona {
 
     private String anioIngreso;
     private Departamento puesto;
@@ -34,5 +34,13 @@ public class Empleado extends Persona {
                 + "  y pertenece a la empresa: " + this.puesto.empresa.getNombre();
 
     }
+
+    public Empleado(String anioIngreso, Departamento puesto, String nombre, int fechaNacimiento) {
+        super(nombre, fechaNacimiento);
+        this.anioIngreso = anioIngreso;
+        this.puesto = puesto;
+    }
+    
+    
 
 }

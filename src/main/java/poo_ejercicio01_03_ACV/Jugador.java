@@ -33,6 +33,12 @@ public class Jugador extends Persona {
     public Equipo getTeam() {
         return team;
     }
+    
+    public Jugador(String posicion, Equipo team, String nombre, int fechaNacimiento) {
+        super(nombre, fechaNacimiento);
+        this.posicion = posicion;
+        this.team = team;
+    }
 
     /*
     private String posicion;
@@ -52,4 +58,6 @@ public class Jugador extends Persona {
     this.equipo = equipo;
     }
      */
+
+    
 }

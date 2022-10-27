@@ -33,4 +33,15 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    
+    
+    public Persona(String nombre, int fechaNacimiento) {
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    
+    
+    
+    
 }

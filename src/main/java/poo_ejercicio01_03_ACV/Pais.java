@@ -9,10 +9,10 @@ package poo_ejercicio01_03_ACV;
  * @author kevinandres
  */
 public class Pais {
-    
+
     private String nombrePais;
     private String liga;
-    
+
     public void setNombrePais(String nombrePais) {
         this.nombrePais = nombrePais;
     }
@@ -20,6 +20,7 @@ public class Pais {
     public void setLiga(String liga) {
         this.liga = liga;
     }
+
     public String getNombrePais() {
         return nombrePais;
     }
@@ -28,10 +29,4 @@ public class Pais {
         return liga;
     }
 
-    
-    
-    
-    
-    
-    
 }

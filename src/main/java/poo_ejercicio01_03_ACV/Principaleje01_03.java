@@ -11,33 +11,52 @@ package poo_ejercicio01_03_ACV;
 public class Principaleje01_03 {
 
     public static void main(String[] args) {
-        
-        
+
         var player1 = new Jugador();
         player1.setNombre("Kevin DeBruyne");
         player1.setFechaNacimiento(1991);
         player1.setPosicion("Medio Campista");
-        
-        
+
         var team1 = new Equipo();
         player1.setTeam(team1);
         team1.setNombreEquipo("Manchester City");
-        
-        
-        var pais1 =  new Pais();
+
+        var pais1 = new Pais();
         team1.setNombrep(pais1);
         pais1.setNombrePais("Inglaterra");
         pais1.setLiga("Premier");
-        
+        //----------------------------------------------
+
+        var empleado1 = new Empleado();
+        empleado1.setNombre("Andres");
+        empleado1.setFechaNacimiento(1999);
+        empleado1.setAnioIngreso("2018");
+
+        var puesto = new Departamento();
+
+        puesto.setCodigoDepartamento(9012);
+        puesto.setNombreDepartamento("Gerencia");
+        empleado1.setPuesto(puesto);
+
+        var empresa = new Empresa();
+        empresa.setNombre("General Electric");
+        puesto.setEmpresa(empresa);
+
         System.out.println(player1.mostrarInfoJugador());
+        System.out.println(empleado1.mostrarInfoEmpleado());
+
+        //System.out.println(empleado1.mostrarInfoEmpleado());
+        /*
+        
+      
         
         
         
+       
+        
+       
         
         
-        
-        
-/*
         var alfaro = new DirectorTecnico();
         alfaro.setNombre("Gustavo Alfaro");
         alfaro.setNacionalidad("Argentina");
@@ -78,8 +97,7 @@ public class Principaleje01_03 {
         System.out.println(byron.mostrarInfoJugador());
         System.out.println(reyArturo.mostrarInfo());
         System.out.println(alfaro.mostrarInfoDirector());
-*/
-
+         */
     }
 
 }

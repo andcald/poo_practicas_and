@@ -9,15 +9,13 @@ package poo_ejercicio01_03_ACV;
  * @author kevinandres
  */
 public class Persona {
-    
+
     private String nombre;
     private int fechaNacimiento;
-    
-   
-    public String mostrarInfo(){
-        return this.nombre+" nació en el año: "+this.fechaNacimiento;
+
+    public String mostrarInfo() {
+        return this.nombre + " nació en el año: " + this.fechaNacimiento;
     }
-   
 
     public String getNombre() {
         return nombre;
@@ -34,7 +32,5 @@ public class Persona {
     public void setFechaNacimiento(int fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-    
-   
-    
+
 }

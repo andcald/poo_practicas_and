@@ -11,10 +11,7 @@ package poo_ejercicio01_03_ACV;
 public class Profesor extends Persona{
     
     private String tituloUniversitario;
-    
-    
-    
-
+   
     public void setTituloUniversitario(String tituloUniversitario) {
         this.tituloUniversitario = tituloUniversitario;
     }

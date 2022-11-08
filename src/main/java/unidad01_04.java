@@ -28,7 +28,9 @@ public class unidad01_04 {
         uruguay.nombre = "Asociasion Uruguaya de Fútbol (AUF)";
         uruguay.participacionesMundial = 12;
 
-        var gonzalo = new Jugador();
+        var gonzalo = new Jugador("GonzaloPLata",2001,"DElantero",ecuador);
+        
+        /*
         gonzalo.nombre = "Gonzalo Plata";
         gonzalo.posicion = "Delantero";
         gonzalo.fechaNacimiento = 2000;
@@ -52,7 +54,7 @@ public class unidad01_04 {
         gustavo.yearInicioContrato = 2020;
         gustavo.yearFinContrato = 2022;
         gustavo.equipo = ecuador;
-
+*/
         var eduardo = new directorTecnico();
         eduardo.nombre = "Eduardo Berizzo";
         eduardo.fechaNacimiento = 1969;
@@ -68,9 +70,9 @@ public class unidad01_04 {
         alonso.equipo = uruguay;
 
         System.out.println(gonzalo.mostrarInfo());
-        System.out.println(diego.mostrarInfo());
-        System.out.println(arturo.mostrarInfo());
-        System.out.println(gustavo.mostrarInfo());
+       // System.out.println(diego.mostrarInfo());
+        //System.out.println(arturo.mostrarInfo());
+        //System.out.println(gustavo.mostrarInfo());
         System.out.println(eduardo.mostrarInfo());
         System.out.println(alonso.mostrarInfo());
 

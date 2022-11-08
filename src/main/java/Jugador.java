@@ -18,6 +18,16 @@ public class Jugador {
     public String mostrarInfo(){
         return this.nombre+" juega en la selección de "+this.equipo.nombre;
     }
+
+    public Jugador(String nombre, int fechaNacimiento, String posicion, Seleccion equipo) {
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+        this.posicion = posicion;
+        this.equipo = equipo;
+    }
+    
+    
+    
     
     
 }

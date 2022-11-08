@@ -21,7 +21,7 @@ public class Principaleje01_03 {
          empleado1.setNombre("Andres");
         empleado1.setFechaNacimiento(1999);
         empleado1.setAnioIngreso("2018");
-         */
+        */
         var team1 = new Equipo();
         var player1 = new Jugador("Medio Campista", team1, "Kevin DeBruayne", 1991);
         player1.setTeam(team1);

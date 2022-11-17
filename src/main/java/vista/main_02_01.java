@@ -28,32 +28,31 @@ public class main_02_01 {
         data[6] = "25";
         personajeControlador.crear(data);
         //System.out.println(personajeControlador.crear(data));
-
-        data[0] = "Travis Bickle";
-        data[1] = "Robert DeNiro";
-        data[2] = "8575";
-        data[3] = "Actor Principal";
-        data[4] = "1945";
-        data[5] = "8";
-        data[6] = "17";
-        personajeControlador.crear(data);
-
-        data[0] = "Theodore Kerabatsos";
-        data[1] = "Steve Buscemi";
-        data[2] = "8576";
-        data[3] = "Actor Secundario";
-        data[4] = "1957";
-        data[5] = "12";
-        data[6] = "13";
-        personajeControlador.crear(data);
-
         data[0] = "Mia Wallace";
         data[1] = "Uma Truman";
-        data[2] = "8577";
+        data[2] = "8575";
         data[3] = "Actriz Secundaria";
         data[4] = "1970";
         data[5] = "4";
         data[6] = "29";
+        personajeControlador.crear(data);
+
+        data[0] = "Donkey";
+        data[1] = "Eddie Murphy";
+        data[2] = "8576";
+        data[3] = "Actor de Reparto";
+        data[4] = "1961";
+        data[5] = "4";
+        data[6] = "3";
+        personajeControlador.crear(data);
+
+        data[0] = "Octavio";
+        data[1] = "Gael García Bernal";
+        data[2] = "8577";
+        data[3] = "Actor Secundario";
+        data[4] = "1978";
+        data[5] = "11";
+        data[6] = "30";
         personajeControlador.crear(data);
 
         //System.out.println(personajeControlador.crear(data));

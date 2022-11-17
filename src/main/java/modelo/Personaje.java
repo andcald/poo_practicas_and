@@ -77,7 +77,7 @@ public class Personaje {
 
     @Override
     public String toString() {
-        return "Personaje{" + "nombrePersonaje=" + nombrePersonaje + ", nombreActor=" + nombreActor + ", codigo=" + codigo + ", papel=" + papel + ", fechaNacimientoA=" + fechaNacimientoA + ", pelicula=" + pelicula + "\n";
+        return  "NombrePersonaje= " + nombrePersonaje + ", nombreActor= " + nombreActor + ", codigo=" + codigo + ", papel=" + papel + ", fechaNacimientoA=" + fechaNacimientoA + ", pelicula=" + pelicula + "\n";
     }
     
     

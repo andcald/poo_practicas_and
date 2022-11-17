@@ -37,20 +37,17 @@ public class PersonajeControlador {
         } else {
             var personaje = new Personaje(nombrePersonaje, nombreActor, codigo, papel, LocalDate.of(anio, mes, dia));
             this.personajeServicioImpl.crear(personaje);
-            retorno = "Personaje " + personaje.getNombrePersonaje()  + " creado correctamente";
+            retorno = "Personaje " + personaje.getNombrePersonaje() + " creado correctamente";
         }
         return retorno;
     }
-
-   
 
     public void setPersonajeServicioImpl(PersonajeServicioImpl personajeServicioImpl) {
         this.personajeServicioImpl = personajeServicioImpl;
     }
 
-
- public PersonajeServicioImpl getPersonajeServicioImpl() {
+    public PersonajeServicioImpl getPersonajeServicioImpl() {
         return personajeServicioImpl;
     }
-    
+
 }

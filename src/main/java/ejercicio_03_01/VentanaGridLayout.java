@@ -26,7 +26,7 @@ public class VentanaGridLayout extends JFrame {
 
     public VentanaGridLayout() throws HeadlessException {
         this.setTitle("GridLayout");
-        this.setSize(300, 100);
+        this.setSize(300, 150);
         this.setLocation(800, 300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarPaneles();

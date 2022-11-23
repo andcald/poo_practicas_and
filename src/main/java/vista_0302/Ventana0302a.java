@@ -51,13 +51,14 @@ public class Ventana0302a extends JFrame{
         this.jPanelList.get(0).setBackground(Color.white);
         this.jPanelList.get(1).setBackground(Color.gray);
         this.jPanelList.get(2).setBackground(Color.white);
+        this.jPanelList.get(3).setBackground(Color.gray);
         
         this.jPanelList.get(0).setLayout(new GridLayout(6,1));
         this.jPanelList.get(0).add(this.jPanelList.get(1));
         this.jPanelList.get(0).add(this.jPanelList.get(2));
+        this.jPanelList.get(0).add(this.jPanelList.get(3));
         
-        
-        
+    
     }
     
     public void iniciarJTextFields(){
@@ -85,6 +86,9 @@ public class Ventana0302a extends JFrame{
         this.jPanelList.get(1).add(this.jTextFieldList.get(0));
         this.jPanelList.get(2).add(this.jLabelList.get(1));
         this.jPanelList.get(2).add(this.jTextFieldList.get(1));
+        this.jPanelList.get(3).add(this.jLabelList.get(2));
+        this.jPanelList.get(3).add(this.jTextFieldList.get(2));
+        
     /*    this.jPanelList.get(0).add(this.jLabelList.get(2));
         this.jPanelList.get(0).add(this.jTextFieldList.get(2));
         this.jPanelList.get(0).add(this.jLabelList.get(3));

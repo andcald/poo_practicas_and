@@ -13,7 +13,7 @@ import modelo.Pelicula;
  *
  * @author kevinandres
  */
-public class main_02_01 {
+public class main {
 
     public static void main(String[] args) {
 

@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package vista_0302;
+package vista_0303;
 
-import controlador_0302.EmpleadoControl;
+import controlador_0303.EmpleadoControl;
 
 /**
  *
  * @author kevinandres
  */
-public class principal_0302 {
+public class principal_0303 {
     
     
     

@@ -5,6 +5,7 @@
 package modelo_0303;
 
 import java.time.LocalDate;
+import vista_0303.VentanaEmpleado;
 
 /**
  *
@@ -17,6 +18,8 @@ public class Empleado {
     private int codigo;
     private String puesto;
     private LocalDate fechaNacimiento;
+   
+   
     
 
     public Empleado(String nombreEmpleado, int codigo, String puesto, LocalDate fechaNacimiento) {

@@ -6,9 +6,9 @@ package controlador_0303;
 
 import java.time.LocalDate;
 import java.util.List;
-import modelo.Personaje;
 import modelo_0303.Empleado;
 import servicio_0303.EmpleadoServiceImpl;
+import vista_0303.VentanaEmpleado;
 
 /**
  *
@@ -17,11 +17,16 @@ import servicio_0303.EmpleadoServiceImpl;
 public class EmpleadoControl {
     
     private EmpleadoServiceImpl empleadoServiceImpl;
+    
+    
 
     public EmpleadoControl() {
         this.empleadoServiceImpl = new EmpleadoServiceImpl();
+     
+        
     }
 
+    
     public String crear(String [] data){
         var retorno="No se pudo crear el jugador";
         
@@ -48,6 +53,11 @@ public class EmpleadoControl {
         return retorno;
         
     }
+    
+    
+    
+    
+    
     
     public List<Empleado> listar(){
         return this.empleadoServiceImpl.listar();

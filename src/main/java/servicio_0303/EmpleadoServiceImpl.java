@@ -15,6 +15,7 @@ import modelo_0303.Empleado;
 public class EmpleadoServiceImpl implements EmpleadoService {
     
     private List<Empleado> empleadoList;
+    
 
     public EmpleadoServiceImpl() {
         this.empleadoList= new ArrayList<>();
@@ -53,6 +54,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
         }
 
     @Override
+    
     public List<Empleado> listar() {
         
         return this.empleadoList;

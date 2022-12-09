@@ -27,32 +27,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
         this.empleadoList.add(empleado);
  
         }
-
-    @Override
-    public void modificar(int codigo, Empleado empleadoModificado) {
-        
-         var indice=0;
-        
-        this.empleadoList.set(indice, empleadoModificado);
-        
-       }
-
-    @Override
-    public void eliminar(int codigo) {
-        var indice=0;
-        for(var empleado:this.empleadoList){
-            if(empleado.getCodigo()==codigo){
-                this.empleadoList.remove(indice);
-                
-                break;
-            }else{
-                indice++;
-            }
-        }
-        
-        
-        }
-
+    
     @Override
     
     public List<Empleado> listar() {

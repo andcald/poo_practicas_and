@@ -5,6 +5,9 @@
 package modelo_0303;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import servicio_0303.EmpresaServiceImpl;
 import vista_0303.VentanaEmpleado;
 
 /**
@@ -15,20 +18,21 @@ public class Empleado {
     
     
     private String nombreEmpleado;
-    private int codigo;
-    private String puesto;
+    private Departamento codigo;
     private LocalDate fechaNacimiento;
+    
    
    
     
 
-    public Empleado(String nombreEmpleado, int codigo, String puesto, LocalDate fechaNacimiento) {
+    public Empleado(String nombreEmpleado, Departamento codigo, LocalDate fechaNacimiento) {
         this.nombreEmpleado = nombreEmpleado;
         this.codigo = codigo;
-        this.puesto = puesto;
         this.fechaNacimiento = fechaNacimiento;
-      
+        
     }
+    
+   
     
 
     public String getNombreEmpleado() {
@@ -39,14 +43,15 @@ public class Empleado {
         this.nombreEmpleado = nombreEmpleado;
     }
 
-    public int getCodigo() {
+    public Departamento getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Departamento codigo) {
         this.codigo = codigo;
     }
 
+    
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -55,19 +60,12 @@ public class Empleado {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String getPuesto() {
-        return puesto;
-    }
-
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
-    }
+   
 
     @Override
     public String toString() {
         return "Empleado{" + "nombreEmpleado=" + nombreEmpleado + 
-                ", codigo="  + codigo + 
-                ", puesto="  + puesto + 
+                ", Nombre Departamento="  + this.codigo.getNombreDepartamento()+  
                 ", fechaNacimiento="  + fechaNacimiento + '}';
     }
 

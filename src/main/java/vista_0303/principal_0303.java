@@ -17,8 +17,9 @@ public class principal_0303 {
      public static void main(String[] args) {
          
          
-          var ventanaEmpleado = new VentanaEmpleado();
-          
+         var ventanaEmpleado = new VentanaEmpleado();
+         // var ventanaEmpresa = new VentanaEmpresa();
+          var ventanaDepartamento = new VentanaDepartamento();
       /*
         var empleadoControl = new EmpleadoControl();
        var data= new String[6];

@@ -5,6 +5,7 @@
 package vista_0303;
 
 import controlador_0303.EmpleadoControl;
+import controlador_0303.EmpresaControl;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -30,6 +31,8 @@ import servicio_0303.EmpleadoServiceImpl;
 public class VentanaEmpleado extends JFrame implements ActionListener {
 
     private EmpleadoControl empleadoControl;
+    private EmpresaControl empresaControl;
+    
 
     private List<JPanel> jPanelList;
     private List<JButton> jButtonList;
@@ -52,6 +55,7 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
     public void iniciarComponentes() {
 
         this.empleadoControl = new EmpleadoControl();
+        this.empresaControl = new EmpresaControl();
         this.jPanelList = new ArrayList<>();
         this.jTextFieldList = new ArrayList<>();
         this.jButtonList = new ArrayList<>();
@@ -146,7 +150,12 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
             datos[3] = this.jTextFieldList.get(3).getText();
             datos[4] = this.jTextFieldList.get(4).getText();
             datos[5] = this.jTextFieldList.get(5).getText();
+            
+          
+            
             this.empleadoControl.crear(datos);
+           
+            
             
             
             

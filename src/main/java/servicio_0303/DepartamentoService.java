@@ -5,18 +5,20 @@
 package servicio_0303;
 
 import java.util.List;
-import modelo_0303.Empleado;
+import modelo_0303.Departamento;
 
 /**
  *
  * @author kevinandres
  */
-public interface EmpleadoService {
+public interface DepartamentoService {
     
-     public void crear(Empleado empleado);
-    
+public void crear(Departamento departamento);
 
-    public abstract List<Empleado> listar();
+    public Departamento buscarPorCodigo(int codigo);
+
+
+    public abstract List<Departamento> listar();
     
     
 }

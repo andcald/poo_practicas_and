@@ -32,7 +32,6 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
 
     private EmpleadoControl empleadoControl;
     private EmpresaControl empresaControl;
-    
 
     private List<JPanel> jPanelList;
     private List<JButton> jButtonList;
@@ -40,9 +39,8 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
     private List<JLabel> jLabelList;
     private List<JTable> jTableList;
     private List<JScrollPane> JScrollList;
-    private List<EmpleadoServiceImpl> empleadosList; 
+    private List<EmpleadoServiceImpl> empleadosList;
     private List<JTextArea> areaList;
-    
 
     public VentanaEmpleado() {
         this.setSize(600, 600);
@@ -64,7 +62,6 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
         this.JScrollList = new ArrayList<>();
         this.empleadosList = new ArrayList<>();
         this.areaList = new ArrayList<>();
-        
 
         this.jPanelList.add(new JPanel());
         this.jPanelList.get(0).setLayout(null);
@@ -119,30 +116,24 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
         this.jButtonList.get(0).addActionListener(this);
         this.jButtonList.get(1).addActionListener(this);
         this.jButtonList.get(2).addActionListener(this);
-        
-         this.jLabelList.add(new JLabel(" ", SwingConstants.LEFT));
-            this.jLabelList.get(4).setBounds(20, 190, 250, 20);
+
+        this.jLabelList.add(new JLabel(" ", SwingConstants.LEFT));
+        this.jLabelList.get(4).setBounds(20, 190, 250, 20);
         this.jPanelList.get(0).add(this.jLabelList.get(4));
-        
+
         this.areaList.add(new JTextArea());
         this.areaList.get(0).setBounds(20, 210, 500, 100);
         this.areaList.get(0).setText("Texto");
-        
+
         this.jPanelList.get(0).add(this.areaList.get(0));
-        
-        
-        
-        
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource().equals(this.jButtonList.get(0))) {
-            
-           
-            
-            
+
             String[] datos = new String[6];
             datos[0] = this.jTextFieldList.get(0).getText();
             datos[1] = this.jTextFieldList.get(1).getText();
@@ -150,52 +141,34 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
             datos[3] = this.jTextFieldList.get(3).getText();
             datos[4] = this.jTextFieldList.get(4).getText();
             datos[5] = this.jTextFieldList.get(5).getText();
-            
-          
-            
+
             this.empleadoControl.crear(datos);
-           
-            
-            
-            
-            
+
             this.jTextFieldList.get(0).setText("");
             this.jTextFieldList.get(1).setText("");
             this.jTextFieldList.get(2).setText("");
             this.jTextFieldList.get(3).setText("yyyy");
             this.jTextFieldList.get(4).setText("mm");
             this.jTextFieldList.get(5).setText("dd");
-            
-             this.jLabelList.get(4).setText("Empleado Guardado");
-            
-            
+
+            this.jLabelList.get(4).setText("Empleado Guardado");
+
         }
-        
-        
-        
-        
 
         if (e.getSource().equals(this.jButtonList.get(1))) {
-            
+
             for (var empleado : this.empleadoControl.listar()) {
-                
-               this.areaList.get(0).setText("hola");
-                
+
+                this.areaList.get(0).setText("hola");
+
                 System.out.println("Empleado = " + empleado.toString());
 
             }
-            
-            
-            
+
         }
 
-        
-        
-        
         if (e.getSource().equals(this.jButtonList.get(2))) {
 
-            
- 
         }
 
     }

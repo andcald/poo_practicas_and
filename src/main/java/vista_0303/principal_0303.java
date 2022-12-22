@@ -19,7 +19,7 @@ public class principal_0303 {
          
          var ventanaEmpleado = new VentanaEmpleado();
          // var ventanaEmpresa = new VentanaEmpresa();
-          var ventanaDepartamento = new VentanaDepartamento();
+        //  var ventanaDepartamento = new VentanaDepartamento();
       /*
         var empleadoControl = new EmpleadoControl();
        var data= new String[6];

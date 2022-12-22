@@ -13,29 +13,26 @@ import modelo_0303.Empleado;
  * @author kevinandres
  */
 public class EmpleadoServiceImpl implements EmpleadoService {
-    
+
     private List<Empleado> empleadoList;
-    
 
     public EmpleadoServiceImpl() {
-        this.empleadoList= new ArrayList<>();
+        this.empleadoList = new ArrayList<>();
     }
 
     @Override
     public void crear(Empleado empleado) {
-        
-        this.empleadoList.add(empleado);
- 
-        }
-    
-    @Override
-    
-    public List<Empleado> listar() {
-        
-        return this.empleadoList;
-        
-        }
 
-    
-    
+        this.empleadoList.add(empleado);
+
+    }
+
+    @Override
+
+    public List<Empleado> listar() {
+
+        return this.empleadoList;
+
+    }
+
 }

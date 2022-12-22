@@ -15,25 +15,18 @@ import vista_0303.VentanaEmpleado;
  * @author kevinandres
  */
 public class Empleado {
-    
-    
-    private String nombreEmpleado;
-    private Departamento codigo;
-    private LocalDate fechaNacimiento;
-    
-   
-   
-    
 
-    public Empleado(String nombreEmpleado, Departamento codigo, LocalDate fechaNacimiento) {
+    private String nombreEmpleado;
+    private int codigo;
+    //private Departamento codigo;
+    private LocalDate fechaNacimiento;
+
+    public Empleado(String nombreEmpleado, int codigo, LocalDate fechaNacimiento) {
         this.nombreEmpleado = nombreEmpleado;
         this.codigo = codigo;
         this.fechaNacimiento = fechaNacimiento;
-        
+
     }
-    
-   
-    
 
     public String getNombreEmpleado() {
         return nombreEmpleado;
@@ -43,15 +36,14 @@ public class Empleado {
         this.nombreEmpleado = nombreEmpleado;
     }
 
-    public Departamento getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(Departamento codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
-    
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -60,24 +52,11 @@ public class Empleado {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-   
-
     @Override
     public String toString() {
-        return "Empleado{" + "nombreEmpleado=" + nombreEmpleado + 
-                ", Nombre Departamento="  + this.codigo.getNombreDepartamento()+  
-                ", fechaNacimiento="  + fechaNacimiento + '}';
+        return "Empleado{" + "nombreEmpleado=" + nombreEmpleado
+                + ", codigo del Departamento=" + codigo
+                + ", fechaNacimiento=" + fechaNacimiento + '}';
     }
 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

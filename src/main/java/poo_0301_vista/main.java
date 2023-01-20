@@ -52,7 +52,7 @@ public class main {
         data[3] = "Actor Secundario";
         data[4] = "1978";
         data[5] = "11";
-        data[6] = "30";
+        data[6] = "40";
         personajeControlador.crear(data);
 
         //System.out.println(personajeControlador.crear(data));

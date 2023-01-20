@@ -95,9 +95,9 @@ public class Ventana01 extends JFrame {
         this.jComboBoxList.add(new JComboBox());
         this.jComboBoxList.add(new JComboBox());
 
-        this.jComboBoxList.get(0).addItem("MATRIZ CUENCA");
-        this.jComboBoxList.get(0).addItem("MATRIZ QUITO");
-        this.jComboBoxList.get(0).addItem("MATRIZ GUAYAQUIL");
+        this.jComboBoxList.get(0).addItem(" CUENCA");
+        this.jComboBoxList.get(0).addItem(" QUITO");
+        this.jComboBoxList.get(0).addItem(" GUAYAQUIL");
 
         this.jComboBoxList.get(1).addItem("CÉDULA");
         this.jComboBoxList.get(1).addItem("PASAPORTE");

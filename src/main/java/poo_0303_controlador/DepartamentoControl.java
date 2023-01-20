@@ -27,7 +27,7 @@ public class DepartamentoControl {
     }
 
     public String crear(String[] data) {
-        var retorno = "No se pudo crear el departamento";
+        var retorno = "No se pudo crear ";
 
         var nombre = data[0];
         var codigo = Integer.valueOf(data[1]).intValue();

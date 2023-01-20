@@ -30,7 +30,7 @@ public class EmpresaControl {
     }
 
     public String crear(String[] data) {
-        var retorno = "No se pudo crear la empresa";
+        var retorno = "No se pudo crear ";
 
         var nombre = data[1];
         var codigo = Integer.valueOf(data[1]).intValue();

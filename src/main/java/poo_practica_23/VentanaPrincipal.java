@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package poo_0306;
+package poo_practica_23;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,7 +25,7 @@ public class VentanaPrincipal extends JFrame {
         
         this.setSize(1000, 700);
         this.setLocation(100, 100);
-        this.setTitle("Simulacion Prueba");
+        this.setTitle("Simulacion ");
         this.panelPaint = new PanelPaint();
         this.panelPaint.setBackground(Color.red);
         setContentPane(panelPaint);

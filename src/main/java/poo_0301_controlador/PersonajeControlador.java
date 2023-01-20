@@ -32,7 +32,7 @@ public class PersonajeControlador {
         var mes = Integer.valueOf(data[5]).intValue();
         var dia = Integer.valueOf(data[6]).intValue();
 
-        if (anio < 1980 && mes > 12 && dia > 31) {
+        if (anio < 1970 && mes > 12 && dia > 31) {
             retorno += " La fecha de nacimiento es incorrecta";
         } else {
             var personaje = new Personaje(nombrePersonaje, nombreActor, codigo, papel, LocalDate.of(anio, mes, dia));

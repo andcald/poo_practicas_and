@@ -33,7 +33,7 @@ public class EmpleadoControl {
     }
 
     public String crear(String[] data) {
-        var retorno = "No se pudo crear el empleado";
+        var retorno = "No se pudo crear ";
         
         
         var nombre = data[0];
